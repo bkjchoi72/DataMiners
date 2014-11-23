@@ -9,6 +9,8 @@
 
 package GUI;
 
+import java.awt.Image;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -22,72 +24,60 @@ public class Login {
 	private final int JFRAME_HEIGHT = 400;
 	private final int JFRAME_WIDTH = 400;
 	
-	// constant variables for "Wild Willow Farm" title
-	private final int TITLE1_LABEL_X = 50;
-	private final int TITLE1_LABEL_Y = 25;
-	private final int TITLE1_LABEL_WIDTH = 300;
-	private final int TITLE1_LABEL_HEIGHT = 50;
-	
-	// constant variables for "Trip Manager" title
-	private final int TITLE2_LABEL_X = 50;
-	private final int TITLE2_LABEL_Y = 75;
-	private final int TITLE2_LABEL_WIDTH = 300;
-	private final int TITLE2_LABEL_HEIGHT = 50;
-	
 	// constant variables for the "username" label
 	private final int USERNAME_LABEL_X = 70;
-	private final int USERNAME_LABEL_Y = 150;
+	private final int USERNAME_LABEL_Y = 170;
 	private final int USERNAME_LABEL_WIDTH = 100;
 	private final int USERNAME_LABEL_HEIGHT = 25;
 	
 	// constant variables for the "username" textbox
 	private final int USERNAME_TEXT_X = 170;
-	private final int USERNAME_TEXT_Y = 150;
+	private final int USERNAME_TEXT_Y = 170;
 	private final int USERNAME_TEXT_WIDTH = 160;
 	private final int USERNAME_TEXT_HEIGHT = 25;
 	
 	// constant variables for the "Password" label
 	private final int PASSWORD_LABEL_X = 70;
-	private final int PASSWORD_LABEL_Y = 200;
+	private final int PASSWORD_LABEL_Y = 220;
 	private final int PASSWORD_LABEL_WIDTH = 100;
 	private final int PASSWORD_LABEL_HEIGHT = 25;
 	
 	// constant variables for the "Password" textbox
 	private final int PASSWORD_TEXT_X = 170;
-	private final int PASSWORD_TEXT_Y = 200;
+	private final int PASSWORD_TEXT_Y = 220;
 	private final int PASSWORD_TEXT_WIDTH = 160;
 	private final int PASSWORD_TEXT_HEIGHT = 25;
 	
 	// constant variables for "login" button
 	private final int LOGIN_BUTTON_X = 110;
-	private final int LOGIN_BUTTON_Y = 275;
+	private final int LOGIN_BUTTON_Y = 290;
 	private final int LOGIN_BUTTON_WIDTH = 80;
 	private final int LOGIN_BUTTON_HEIGHT = 25;
 	
 	// constant variables for "register" button. We implement this button last
 	// when we have time
 	private final int REGISTER_BUTTON_X = 210;
-	private final int REGISTER_BUTTON_Y = 275;
+	private final int REGISTER_BUTTON_Y = 290;
 	private final int REGISTER_BUTTON_WIDTH = 80;
 	private final int REGISTER_BUTTON_HEIGHT = 25;
 	
 	// attributes
 	private JFrame frame;	// top level container
 	private JPanel panel;	// subcontainer that keeps all the components together
-	//private CustomFont font; 	// will be used to customize font
 
 	// default constructor
 	public Login() throws Exception {
 		
 		// initialize the JFrame container
-		frame = new JFrame("TWWF Admin Login");	// this will be displayed on top
+		frame = new JFrame("TWWF Admin Login");	// this will set the background of the login page
 		frame.setSize(JFRAME_WIDTH, JFRAME_HEIGHT);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		// initialize the JPanel container
-		panel = new JPanel();
+		panel = new ImagePanel("resources/wwf-logo.png");
 		frame.add(panel);
 		placeComponents(panel);		
+	
 		
 		// make it not resizable
 		frame.setResizable(false);

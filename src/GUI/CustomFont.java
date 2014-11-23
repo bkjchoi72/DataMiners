@@ -24,7 +24,6 @@ public class CustomFont {
 	
 	// default constructor sets the font to "REGULATORS" because this font looks cowboyish and farmy
 	public CustomFont() throws Exception {
-		//url = new URL("http://www.webpagepublicity.com/free-fonts/r/Regulators%20Expanded.ttf");
 		url = new URL("http://www.webpagepublicity.com/free-fonts/b/Baveuse.ttf");
 		font = Font.createFont(Font.TRUETYPE_FONT, url.openStream());
 		font = font.deriveFont(Font.PLAIN, 20);
