@@ -93,23 +93,6 @@ public class Login {
 	private void placeComponents(JPanel panel) throws Exception {
 
 		panel.setLayout(null);
-		//font = new CustomFont();
-		
-		/* label for "Wild Willow Farm" title
-		JLabel titleLabel1 = new JLabel("Wild Willow Farm");
-		titleLabel1.setFont(font.getFont());
-		titleLabel1.setBounds(TITLE1_LABEL_X, TITLE1_LABEL_Y, TITLE1_LABEL_WIDTH, 
-				TITLE1_LABEL_HEIGHT);
-		panel.add(titleLabel1);
-		*/
-		
-		/* label for "Trip Manager" title
-		JLabel titleLabel2 = new JLabel("Trip Manager");
-		titleLabel2.setFont(font.getFont());
-		titleLabel2.setBounds(TITLE2_LABEL_X, TITLE2_LABEL_Y, TITLE2_LABEL_WIDTH, 
-				TITLE2_LABEL_HEIGHT);
-		panel.add(titleLabel2);
-		*/
 
 		// label for "username"
 		JLabel userLabel = new JLabel("Username");
