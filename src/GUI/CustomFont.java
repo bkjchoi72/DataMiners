@@ -22,9 +22,9 @@ public class CustomFont {
 	private Font font;
 	GraphicsEnvironment ge;
 	
-	// default constructor sets the font to "REGULATORS" because this font looks cowboyish and farmy
+	// default constructor sets the font to "RESPUBLICA"
 	public CustomFont() throws Exception {
-		url = new URL("http://www.webpagepublicity.com/free-fonts/b/Baveuse.ttf");
+		url = new URL("http://www.webpagepublicity.com/free-fonts/r/ResPublica.ttf");
 		font = Font.createFont(Font.TRUETYPE_FONT, url.openStream());
 		font = font.deriveFont(Font.PLAIN, 20);
 		ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
