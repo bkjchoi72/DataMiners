@@ -14,6 +14,8 @@ public class Main {
 		
 		// load the login page
 		Login login = new Login();
+		MainPage main = new MainPage();
+		
 	}
 
 }
