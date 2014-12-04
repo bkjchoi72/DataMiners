@@ -14,6 +14,8 @@ public class Main {
 		
 		// load the login page
 		Login login = new Login();
+		
+		// implement the login button so that it leads to the mainPage
 		MainPage main = new MainPage();
 		
 	}
